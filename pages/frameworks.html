@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.3/dist/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="competence.css"> 
+    <title>Frameworks & Bibliothèques</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="page-header mb-5">
+        <h1 class="display-4 text-success">Frameworks & Bibliothèques</h1>
+        <p class="lead">Découvrez les frameworks et bibliothèques que j'utilise</p>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container mt-4">
+        <div class="row">
+            <!-- React -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/react.jpg" class="card-img-top" alt="React.js">
+                    <div class="card-body">
+                        <h5 class="card-title green">React.js</h5> <!-- Green title class -->
+                        <p class="card-text">React.js est une bibliothèque JavaScript pour la création d'interfaces utilisateur dynamiques et réactives.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Angular -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/ang.jpg" class="card-img-top" alt="Angular">
+                    <div class="card-body">
+                        <h5 class="card-title green">Angular</h5> <!-- Green title class -->
+                        <p class="card-text">Angular est un framework de développement d'applications Web développé par Google, basé sur TypeScript.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Spring Boot -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/spr.jpg" class="card-img-top" alt="Spring Boot">
+                    <div class="card-body">
+                        <h5 class="card-title green">Spring Boot</h5> <!-- Green title class -->
+                        <p class="card-text">Spring Boot est un framework Java qui facilite le développement d'applications Web robustes et évolutives.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Django -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/djan.jfif" class="card-img-top" alt="Django">
+                    <div class="card-body">
+                        <h5 class="card-title green">Django</h5> <!-- Green title class -->
+                        <p class="card-text">Django est un framework Web Python qui facilite le développement rapide et maintenable des applications Web complexes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Express.js -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/express.png" class="card-img-top" alt="Express.js">
+                    <div class="card-body">
+                        <h5 class="card-title green">Express.js</h5> <!-- Green title class -->
+                        <p class="card-text">Express.js est un framework minimaliste pour Node.js permettant de créer des applications web rapides et flexibles.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- React Native -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/native.jpg" class="card-img-top" alt="React Native">
+                    <div class="card-body">
+                        <h5 class="card-title green">React Native</h5> <!-- Green title class -->
+                        <p class="card-text">React Native permet de développer des applications mobiles natives en utilisant JavaScript et React.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Flutter -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/flu.jpg" class="card-img-top" alt="Flutter">
+                    <div class="card-body">
+                        <h5 class="card-title green">Flutter</h5> <!-- Green title class -->
+                        <p class="card-text">Flutter est un framework de développement mobile créé par Google permettant de créer des applications multiplateformes avec une seule base de code.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bootstrap -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/boot.png" class="card-img-top" alt="Bootstrap">
+                    <div class="card-body">
+                        <h5 class="card-title green">Bootstrap</h5> <!-- Green title class -->
+                        <p class="card-text">Bootstrap est un framework CSS populaire pour créer des designs modernes et réactifs rapidement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="text-center mt-4">
+            <a href="Compétences.html" class="btn btn-primary green">Retour à l'accueil</a> <!-- Green button class -->
+        </div>
+    </main>
+
+    <!-- Back To Top Button -->
+    <button id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTopButton = document.getElementById("backToTop");
+    
+        // Show/Hide button based on scroll
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = "flex";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+    
+        // Scroll to top when the button is clicked
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+    <footer class="text-center">
+        <b>&copy; 2024 Morched Abdennadher. Tous droits réservés.</b>
+    </footer>
+</body>
+</html>

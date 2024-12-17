@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.3/dist/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="competence.css"> 
+    <title>Outils de Développement</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="page-header mb-5">
+        <h1 class="display-4 text-warning gold">Outils de Développement</h1> <!-- Gold title class -->
+        <p class="lead text-warning gold">Découvrez les outils que j'utilise pour le développement logiciel.</p> <!-- Gold text class -->
+    </header>
+
+    <!-- Main Section -->
+    <main class="container mt-4">
+        <div class="row">
+            <!-- Visual Studio Code -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/vs.jfif" class="card-img-top" alt="Visual Studio Code">
+                    <div class="card-body">
+                        <h5 class="card-title gold">Visual Studio Code</h5> <!-- Gold title class -->
+                        <p class="card-text">Visual Studio Code est un éditeur de code open-source, offrant des extensions riches pour une expérience de développement personnalisée.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- IntelliJ IDEA -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/int.png" class="card-img-top" alt="IntelliJ IDEA">
+                    <div class="card-body">
+                        <h5 class="card-title gold">IntelliJ IDEA</h5> <!-- Gold title class -->
+                        <p class="card-text">IntelliJ IDEA est un IDE puissant pour le développement Java et d'autres langages, avec des outils intégrés pour le code, le test, et la gestion de versions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Eclipse -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/eclip.jfif" class="card-img-top" alt="Eclipse">
+                    <div class="card-body">
+                        <h5 class="card-title gold">Eclipse</h5> <!-- Gold title class -->
+                        <p class="card-text">Eclipse est un IDE open-source principalement utilisé pour le développement Java, avec de nombreuses extensions pour d'autres langages de programmation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="text-center mt-4">
+            <a href="Compétences.html" class="btn btn-primary gold">Retour à l'accueil</a> <!-- Gold button class -->
+        </div>
+    </main>
+
+    <!-- Back To Top Button -->
+    <button id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTopButton = document.getElementById("backToTop");
+    
+        // Show/Hide button based on scroll
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = "flex";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+    
+        // Scroll to top when the button is clicked
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+    <footer class="text-center">
+        <b>&copy; 2024 Morched Abdennadher. Tous droits réservés.</b>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.3/dist/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="competence.css"> 
+    <title>Bases de Données</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="page-header mb-5">
+        <h1 class="display-4 text-danger">Bases de Données</h1>
+        <p class="lead">Découvrez les systèmes de gestion de bases de données populaires que j'utilise</p>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container mt-4">
+        <div class="row">
+            <!-- MySQL -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/mysjfif.jfif" class="card-img-top" alt="MySQL">
+                    <div class="card-body">
+                        <h5 class="card-title">MySQL</h5>
+                        <p class="card-text">MySQL est un système de gestion de base de données relationnelle open-source, populaire pour les applications Web.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oracle -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/orcl.jpg" class="card-img-top" alt="Oracle">
+                    <div class="card-body">
+                        <h5 class="card-title">Oracle</h5>
+                        <p class="card-text">Oracle est un système de gestion de base de données relationnelle largement utilisé dans les entreprises pour la gestion de données complexes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- MongoDB -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/mongo.png" class="card-img-top" alt="MongoDB">
+                    <div class="card-body">
+                        <h5 class="card-title">MongoDB</h5>
+                        <p class="card-text">MongoDB est une base de données NoSQL orientée document, idéale pour les applications flexibles et évolutives.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Firebase -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/firb.jfif" class="card-img-top" alt="Firebase">
+                    <div class="card-body">
+                        <h5 class="card-title">Firebase</h5>
+                        <p class="card-text">Firebase est une plateforme de développement mobile et web qui fournit des services de bases de données en temps réel et des fonctionnalités back-end.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- phpMyAdmin -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="../images/phpmy.jpg" class="card-img-top" alt="phpMyAdmin">
+                    <div class="card-body">
+                        <h5 class="card-title">phpMyAdmin</h5>
+                        <p class="card-text">phpMyAdmin est un outil open-source permettant de gérer MySQL via une interface web, facilitant l'administration de bases de données.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="text-center mt-4">
+            <a href="Compétences.html" class="btn btn-primary">Retour à l'accueil</a>
+        </div>
+    </main>
+    <button id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script>
+        const backToTopButton = document.getElementById("backToTop");
+    
+        // Afficher/Masquer le bouton en fonction du défilement
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = "flex";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+    
+        // Revenir en haut lorsque le bouton est cliqué
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+<br>
+    <footer class="text-center">
+        <b>&copy; 2024 Morched Abdennadher. Tous droits réservés.</b>
+    </footer>
+</body>
+</html>
